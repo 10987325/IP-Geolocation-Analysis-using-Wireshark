@@ -1,32 +1,85 @@
-# IP Geolocation Analysis using Wireshark
+# 🔍 Network Traffic Investigation using Wireshark (IP Intelligence Analysis)
 
-## Objective
+## 📌 Objective
 
-Analyze captured network packets and identify the geographical location of IP addresses.
+The objective of this project is to analyze captured network traffic using Wireshark, identify suspicious IP addresses, and perform geolocation-based intelligence to determine potential security threats.
 
-## Tool Used
+---
+
+## 🛠️ Tools Used
 
 * Wireshark
+* IP Geolocation Tool (ipinfo.io)
+* Packet Capture (PCAP data)
 
-## Method
+---
 
-1. Captured network traffic using Wireshark.
-2. Identified source and destination IP addresses in the packet capture.
-3. Extracted suspicious or interesting IP addresses.
-4. Checked the IP addresses using an IP geolocation service to determine their location.
+## 🔎 Investigation Steps
 
-## Findings
+1. Captured live network traffic using Wireshark
+2. Identified active and communicating IP addresses
+3. Extracted suspicious or unknown IPs
+4. Performed geolocation lookup using IP intelligence tools
+5. Analyzed traffic patterns and behavior
 
-Several external IP addresses were observed communicating with the system.
-Using IP geolocation lookup, their approximate country and region were identified.
+---
 
-## Conclusion
+## 🚨 Findings
 
-Wireshark packet capture combined with IP geolocation lookup helps analysts understand where network traffic originates from. This technique is useful in security monitoring and threat investigation.
+* Multiple IP addresses were identified during packet capture
+* Some IPs were linked to foreign geographic locations
+* Observed repeated communication patterns from specific IPs
+* Traffic behavior indicated possible scanning or automated activity
 
-## Skills Demonstrated
+---
 
-* Packet analysis
-* IP address investigation
-* Basic network traffic analysis
-* Cybersecurity investigation
+## 🧠 Analysis
+
+The presence of repeated requests from certain IP addresses, combined with their geographic origin, suggests potentially suspicious behavior. While geolocation alone does not confirm malicious intent, unusual traffic patterns such as frequent requests or unknown external communication may indicate:
+
+* Network scanning activity
+* Automated scripts or bots
+* Unauthorized access attempts
+
+Further investigation using threat intelligence platforms (e.g., VirusTotal) is recommended to validate the reputation of identified IPs.
+
+---
+
+## ✅ Conclusion
+
+This analysis demonstrates how Wireshark can be used to monitor and investigate network traffic. By combining packet analysis with IP geolocation, security analysts can gain insights into potential threats and take appropriate action.
+
+---
+
+## 📸 Screenshots
+
+(Add your Wireshark screenshots here)
+
+---
+
+## 🚀 Skills Gained
+
+* Network traffic analysis
+* Packet filtering and inspection
+* IP intelligence and geolocation analysis
+* Basic threat detection and investigation
+
+---
+
+## 📌 Future Improvements
+
+* Integrate VirusTotal for IP reputation analysis
+* Perform deeper protocol-level inspection
+* Simulate real-world attack scenarios for advanced detection
+
+---
+
+## 👨‍💻 Author
+
+Faraz Kachelo
+
+Aspiring SOC Analyst | Cybersecurity Enthusiast
+
+https://www.linkedin.com/in/faraz-kachelo-b180267a/
+
+GitHub: https://github.com/10987325
